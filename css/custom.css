@@ -1,0 +1,58 @@
+
+.grid-container {
+  max-width: 100%;
+}
+
+.white-background {
+  background-color: #fff;
+}
+
+.gold-background {
+  background-color: #f0ba58;
+}
+
+.green-background {
+  background-color: #7fe8b5;
+}
+
+.green-text {
+  color: #7fe8b5;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.custom-button {
+  border-radius: 12px;
+  border-color: #f0ba58;
+  border-width: 3px;
+  border-style: solid;
+  background-color: #fff;
+  color: #f0ba58;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  padding: 1.5em 3em;
+  margin-bottom: 35px;
+}
+
+.gold-border-bottom {
+    border-color: #f0ba58;
+    border-width: 0px 0px 4px 0px;
+    border-style: solid;
+}
+
+h1, h2, h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+h4,h5,h6, p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+li {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
