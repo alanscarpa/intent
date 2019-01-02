@@ -1,14 +1,30 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131562044-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131562044-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intent - A Simple Resolution Tracker and Reminder</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/custom.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function scrollToSignup() {
+        $('html, body').animate({ scrollTop: $("#signup").offset().top }, 1000)
+      }
+    </script>
   </head>
   <body>
     <div class="grid-container">
@@ -19,7 +35,7 @@
         </div>
       </div>
 
-      <div class="grid-x grid-padding-x green-background white-text align-center">
+      <div class="grid-x grid-padding-x green-background white-text align-center top-padding bottom-padding">
         <div class="small-10 medium-7 text-center">
           <br>
           <h1>Make Your Resolutions A Reality</h1>
@@ -27,16 +43,18 @@
           <h4>Guilty of ditching your resolutions by mid-January? Intent will help you stay on track all year long.</h4>
           <br>
           <br>
-          <a href="#" class="button custom-button">Sign Up For Free</a>
+          <a href="javascript:scrollToSignup()" class="button custom-button">Sign Up For Free</a>
+          </div>
         </div>
       </div>
 
 
-      <div class="grid-x grid-padding-x align-center">
+      <div class="grid-x grid-padding-x align-center bottom-space top-space">
 
-        <div class="small-12 text-center">
+        <div class="small-10 text-center">
           <br>
-          <h3>How It Works</h3>
+          <h1>How It Works</h1>
+          <br><br>
         </div>
 
         <div class="small-10 medium-6 text-center">
@@ -45,56 +63,71 @@
           <h5>Easily join by signing up with your email and resolution.  This is what you will focus on and grow towards.</h5>
           <br>
         </div>
-        <div class="small-8 text-center">
-          <img src="images/example-email.png" alt="Sign Up Free">
-        </div>
 
         <div class="small-10 medium-8 text-center">
           <br>
+          <h3 class="green-text">STEP 2: RECEIVE CONTENT & CHALLENGES</h3>
+          <h5>Get daily content to keep you motivated and inspired.  Complete weekly challenges that help you take steps towards success.  All directly to your inbox.</h5>
           <br>
-          <h3 class="green-text">STEP 2: RECEIVE CONTENT & EXERCISES</h3>
-          <h5>Get daily content to keep you motivated and inspired.  Complete weekly exercises that help you take steps towards success.  All directly to your inbox.</h5>
-          <br>
-        </div>
-        <div class="small-11 text-center">
-          <img src="images/example-challenge.png" alt="Challenge">
         </div>
 
         <div class="small-10 medium-8 text-center">
           <br>
           <h3 class="green-text">STEP 3: EARN KARMA COINS</h3>
-          <h5>When you've completed your exercise, reply to us directly by email.  We will keep track of your progress as you earn your karma coins!</h5>
-        </div>
-        <div class="small-11 text-center">
-          <img src="images/example-karma-coins.png" alt="Karma Coins">
+          <h5>We track your progress for you.  When you've completed your challenge, simply reply to our email.  You will earn Karma coins and build streaks to keep you moving forward.</h5>
+          <br>
         </div>
       </div>
 
 
-      <div class="grid-x grid-padding-x align-center gold-background white-text">
-        <div class="small-10 text-center">
+      <div class="grid-x grid-padding-x align-center gold-background white-text top-padding bottom-padding">
+
+        <div class="small-10 medium-8 text-center">
           <br>
-          <h1>It's like a friendly life coach in your inbox!</h1>
+          <h1>Here's A Quick Example:</h1>
+          <br>
+          <br>
           <br>
         </div>
-        <div class="small-8 text-center">
-          <img src="images/teamwork.png" alt="Teamwork" style="padding-bottom: 25px">
+
+        <div class="small-8 text-center bottom-space">
+          <h3>Sign Up Free</h3>
+          <br>
+          <img src="images/example-email.png" alt="Sign Up Free">
+        </div>
+
+        <div class="small-11 text-center bottom-space">
+          <h3>Get Emails That Support Your Resolution</h3>
+          <br>
+          <img src="images/example-challenge.png" alt="Challenge">
+        </div>
+
+        <div class="small-11 text-center">
+          <h3>Track Your Progress</h3>
+          <br>
+          <img src="images/example-karma-coins.png" alt="Karma Coins">
+          <br>
+          <br>
+          <br>
+          <br>
+          <a href="javascript:scrollToSignup()" class="button custom-button green-button">Sign Up For Free</a>
         </div>
       </div>
       
     
 
-      <div class="grid-x grid-padding-x align-center green-background white-text">
+      <div class="grid-x grid-padding-x align-center green-background white-text top-padding bottom-padding">
         <div class="small-10 text-center">
           <br>
           <h1>Why use intent?</h1>
+          <br>
         </div>
         <div class="small-10 medium-6">
           <h5>
             <ul>
               <li>Get inspired and stay motivated with relevant articles, quotes, and milestone trackers</li>
               <li>Take steps toward your goals by turning your resolutions into actionable items</li>
-              <li>Track your progress and be rewarded for your efforts by earning coins for completing exercises</li>
+              <li>Track your progress and be rewarded for your efforts by earning coins, streaks, and more for completing challenges</li>
             </ul>
           </h5>
           <br>
@@ -102,18 +135,60 @@
       </div>
 
 
-      <div class="grid-x grid-padding-x align-center">
+      <div class="grid-x grid-padding-x align-center top-padding bottom-padding">
         <div class="small-10 medium-8 text-center">
           <br>
-          <h1>Intent is an easy to use tracker that helps you grow towards your goals.</h1>
+          <h1><span class="green-text">intent</span> is an easy to use tracker that helps you grow towards your goals.</h1>
           <br>
-          <a href="#" class="button custom-button">Sign Up For Free</a>
+          <br>
+          <a href="javascript:scrollToSignup()" class="button custom-button">Sign Up For Free</a>
         </div>
       </div>
 
+      <div class="grid-x grid-padding-x align-center top-padding bottom-padding green-background" id="signup">
+        <div class="small-10 medium-8 text-center">
+          <!-- Begin Mailchimp Signup Form -->
+          <style type="text/css">
+            #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+          </style>
+          <div id="mc_embed_signup">
+          <form action="https://focusyourintent.us7.list-manage.com/subscribe/post?u=095c179cd294cf0b84ff9f9e5&amp;id=2cb9866836" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <h2>Fill out this simple form to get started!</h2>
+            <br>
+            <br>
+          <div class="mc-field-group">
+            <label for="mce-NAME"><h4>Name  <span class="asterisk">*</span></h4>
+          </label>
+            <input type="text" value="" name="NAME" class="required" id="mce-NAME">
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL"><h4>Email Address  <span class="asterisk">*</span></h4>
+          </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-RESOLUTION"><h4>Resolution  <span class="asterisk">*</span></h4>
+          </label>
+            <input type="text" value="" name="RESOLUTION" class="required" id="mce-RESOLUTION">
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-RESDES"><h4>Resolution Description </h4></label>
+            <textarea type="text" value="" name="RESDES" class="" id="mce-RESDES" rows=3></textarea>
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_095c179cd294cf0b84ff9f9e5_2cb9866836" tabindex="-1" value=""></div>
+            <div class="clear" style="text-align: center"><input type="submit" value="Join Now" name="subscribe" id="mc-embedded-subscribe" style="margin-top: 20px" class="button custom-button green-button green-button-big"></div>
+            </div>
+          </form>
+          </div>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
 
-
-      
 
     </div>
 
