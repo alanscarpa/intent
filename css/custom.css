@@ -16,7 +16,7 @@
 }
 
 .green-text {
-  color: #7fe8b5;
+  color: #7fe8b5!important;
 }
 
 .white-text {
@@ -75,8 +75,39 @@
   padding-bottom: 75px;
 }
 
+.logo-font {
+  font-family: 'Quicksand', sans-serif!important;
+  font-weight: 700!important;
+}
+
+.menu .logo-font {
+  font-size: 1.5em!important;
+}
+
+.block {
+  margin-left: 48%;
+}
+
+.top-bar li {
+  margin-top: 0px;
+}
+
+.menu-icon::after {
+  background: #7fe8b5;
+  -webkit-box-shadow: 0 7px 0 #7fe8b5, 0 14px 0 #7fe8b5;
+  box-shadow: 0 7px 0 #7fe8b5, 0 14px 0 #7fe8b5;
+}
+
+.top-bar, .top-bar ul, .title-bar {
+  background: #fff;
+}
+
+.menu a {
+  color: #f1bb4e!important;
+}
+
 h1, h2, h3 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Aleo', serif;
   font-weight: 700;
 }
 
@@ -108,7 +139,7 @@ li {
 
 #mc_embed_signup h2 {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Aleo', serif;
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 1.4;

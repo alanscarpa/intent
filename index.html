@@ -7,7 +7,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-131562044-1');
     </script>
     <meta charset="utf-8">
@@ -19,20 +18,51 @@
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/custom.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aleo:700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
       function scrollToSignup() {
         $('html, body').animate({ scrollTop: $("#signup").offset().top }, 1000)
+      }
+      function scrollToHowItWorks() {
+        $('html, body').animate({ scrollTop: $("#howitworks").offset().top }, 1000)
+      }
+      function scrollToPricing() {
+        $('html, body').animate({ scrollTop: $("#pricing").offset().top }, 1000)
+      }
+      function scrollToAbout() {
+        $('html, body').animate({ scrollTop: $("#about").offset().top }, 1000)
       }
     </script>
   </head>
   <body>
     <div class="grid-container">
 
-      <div class="grid-x grid-padding-x">
-        <div class="small-12 cell text-center gold-border-bottom">
-          <h1 class="green-text">intent</h1>
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+        <div class="title-bar-title green-text logo-font">Intent</div>
+      </div>
+
+      <div class="top-bar" id="example-menu">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text show-for-medium green-text logo-font">Intent</li>
+          </ul>
         </div>
+        <div class="top-bar-right">
+          <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
+            <li><a href="javascript:scrollToAbout()">About</a></li>
+            <li><a href="javascript:scrollToHowItWorks()">How It Works</a></li>
+            <li><a href="javascript:scrollToPricing()">Pricing</a></li>
+            <li><a href="mailto:team@focusyourintent.com">Contact</a></li>
+            <li><a href="javascript:scrollToSignup()">Join Now</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 cell text-center gold-border-bottom"></div>
       </div>
 
       <div class="grid-x grid-padding-x green-background white-text align-center top-padding bottom-padding">
@@ -49,38 +79,7 @@
       </div>
 
 
-      <div class="grid-x grid-padding-x align-center bottom-space top-space">
-
-        <div class="small-10 text-center">
-          <br>
-          <h1>How It Works</h1>
-          <br><br>
-        </div>
-
-        <div class="small-10 medium-6 text-center">
-          <br>
-          <h3 class="green-text">STEP 1: SUBMIT YOUR RESOLUTION</h3>
-          <h5>Easily join by signing up with your email and resolution.  This is what you will focus on and grow towards.</h5>
-          <br>
-        </div>
-
-        <div class="small-10 medium-8 text-center">
-          <br>
-          <h3 class="green-text">STEP 2: RECEIVE CONTENT & CHALLENGES</h3>
-          <h5>Get daily content to keep you motivated and inspired.  Complete weekly challenges that help you take steps towards success.  All directly to your inbox.</h5>
-          <br>
-        </div>
-
-        <div class="small-10 medium-8 text-center">
-          <br>
-          <h3 class="green-text">STEP 3: EARN KARMA COINS</h3>
-          <h5>We track your progress for you.  When you've completed your challenge, simply reply to our email.  You will earn Karma coins and build streaks to keep you moving forward.</h5>
-          <br>
-        </div>
-      </div>
-
-
-      <div class="grid-x grid-padding-x align-center gold-background white-text top-padding bottom-padding">
+      <div class="grid-x grid-padding-x align-center gold-background white-text top-padding bottom-padding" id="howitworks">
 
         <div class="small-10 medium-8 text-center">
           <br>
@@ -113,13 +112,43 @@
           <a href="javascript:scrollToSignup()" class="button custom-button green-button">Sign Up For Free</a>
         </div>
       </div>
-      
-    
+
+
+      <div class="grid-x grid-padding-x align-center bottom-space top-space">
+
+        <div class="small-10 text-center">
+          <br>
+          <h1>How It Works</h1>
+          <br><br>
+        </div>
+
+        <div class="small-10 medium-6 text-center">
+          <br>
+          <h3 class="green-text">STEP 1: SUBMIT YOUR RESOLUTION</h3>
+          <h5>Easily join by signing up with your email and resolution.  This is what you will focus on and grow towards.</h5>
+          <br>
+        </div>
+
+        <div class="small-10 medium-8 text-center">
+          <br>
+          <h3 class="green-text">STEP 2: RECEIVE CONTENT & CHALLENGES</h3>
+          <h5>Get weekly content to keep you motivated and inspired.  Complete weekly challenges that help you take steps towards success.  All directly to your inbox.</h5>
+          <br>
+        </div>
+
+        <div class="small-10 medium-8 text-center">
+          <br>
+          <h3 class="green-text">STEP 3: EARN KARMA COINS</h3>
+          <h5>We track your progress for you.  When you've completed your challenge, simply reply to our email.  You will earn Karma coins and build streaks to keep you moving forward.</h5>
+          <br>
+        </div>
+      </div>
+  
 
       <div class="grid-x grid-padding-x align-center green-background white-text top-padding bottom-padding">
         <div class="small-10 text-center">
           <br>
-          <h1>Why use intent?</h1>
+          <h1>Why use <span class="logo-font">intent</span>?</h1>
           <br>
         </div>
         <div class="small-10 medium-6">
@@ -135,10 +164,40 @@
       </div>
 
 
-      <div class="grid-x grid-padding-x align-center top-padding bottom-padding">
+      <div class="grid-x grid-padding-x align-center top-padding bottom-padding gold-background" id="about">
+        <div class="small-10 medium-8 text-center white-text">
+          <br>
+          <h1><span class="green-text logo-font" style="background: white;padding: 4px;border-radius: 6px;">intent</span> is an easy to use e-mail app that helps you grow towards your goals and keeps track of your progress.</h1>
+          <br>
+          <br>
+          <h5>I created Intent because as the year wears on and life gets busy, we lose focus on our well-meaning New Year's resolutions.
+          <br>
+          <br>
+          I set resolutions every year. But the truth is, if you ask me 6 months later what my resolution was, I will have no idea. Even if I write it down, it's not surrounded by a system that supports it (or I lose the paper I wrote it down on because who uses paper). 
+          <br>
+          <br>
+          Intent hopes to not only remind you, "Hey, don't forget that you wanted to work on financial growth this year" but also to keep you motivated to stick to it with challenges, articles, and other relevant content.
+          <br>
+          <br>
+          - Alan Scarpa, Founder
+          <br>
+          <a href="https://twitter.com/alanscarpa?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @alanscarpa</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </h5>
+          <br>
+          <br>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x align-center top-padding bottom-padding" id="pricing">
         <div class="small-10 medium-8 text-center">
           <br>
-          <h1><span class="green-text">intent</span> is an easy to use tracker that helps you grow towards your goals.</h1>
+          <h1><span class="green-text logo-font">intent</span> is 100% free.</h1>
+          <br>
+          <br>
+          <h3>We aren't here to upsell you.<br>
+          <br>We just want to grow a community of supportive people who are excited to learn, improve, and change.
+          <br>
+          </h3>
           <br>
           <br>
           <a href="javascript:scrollToSignup()" class="button custom-button">Sign Up For Free</a>
