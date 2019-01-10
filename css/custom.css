@@ -106,6 +106,10 @@
   color: #f1bb4e!important;
 }
 
+.white-line {
+  border-bottom: 2px solid #fff;
+}
+
 h1, h2, h3 {
   font-family: 'Aleo', serif;
   font-weight: 700;
@@ -121,6 +125,18 @@ li {
   font-weight: 500;
   margin-top: 20px;
 }
+
+/*Footer*/
+
+.footer {
+  padding: 80px 0px;
+}
+
+.footer a {
+  display: block;
+}
+
+/*Mailchimp*/
 
 #mc_embed_signup [type='text'], #mc_embed_signup [type='email'], #mc_embed_signup [type='text']:focus , #mc_embed_signup [type='email']:focus {
   background-color: #98f6c9;
