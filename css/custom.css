@@ -175,3 +175,8 @@ li {
   height: 4em;
   border-radius: 12px;
 }
+
+#mc_embed_signup .button:hover {
+  background-color: #f0ba58;
+  color: white;
+}
